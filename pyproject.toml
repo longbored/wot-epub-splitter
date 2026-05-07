@@ -1,0 +1,21 @@
+[project]
+name = "wot-epub-splitter"
+version = "1.0.0"
+description = "Splits the Wheel of Time Hugo voter packet omnibus EPUB into individual books"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "lxml>=6.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.12",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
